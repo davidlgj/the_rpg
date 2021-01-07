@@ -1375,6 +1375,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4e08c8bc7575d7e091fe0706963bd22e2a4be6a64da995f03b2a5a57d66ad015"
 
 [[package]]
+name = "flate2"
+version = "1.0.19"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7411863d55df97a419aa64cb4d2f167103ea9d767e2c54a1868b7ac3f6b47129"
+dependencies = [
+ "cfg-if 1.0.0",
+ "crc32fast",
+ "libc",
+ "miniz_oxide 0.4.3",
+]
+
+[[package]]
 name = "fnv"
 version = "1.0.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2858,6 +2870,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "rs-tiled_json"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "935bf6007a1c8189a58500618f0861daab85cb0e05f716747ed9ace84dcd1254"
+dependencies = [
+ "base64 0.12.3",
+ "flate2",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
 name = "rustc-demangle"
 version = "0.1.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3213,6 +3237,7 @@ name = "tage-rpg"
 version = "0.1.0"
 dependencies = [
  "bevy",
+ "rs-tiled_json",
 ]
 
 [[package]]

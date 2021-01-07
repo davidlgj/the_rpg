@@ -8,3 +8,4 @@ edition = "2018"
 
 [dependencies]
 bevy = "0.4"
+rs-tiled_json = "0.1.0"
